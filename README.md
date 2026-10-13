@@ -10,7 +10,7 @@ A GPS location capture feature has been added.</p>
 ## Features
 <p>In this tool I added two automatic webpage templates for engaged target on webpage to get more picture of cam</p>
 <ul>
-  <li>Festival Wishing</li>
+  <li>Wishing anything</li>
   <li>Live YouTube TV</li>
   <li>Online Meeting [Beta]</li>
   <li>GPS Location Tracking</li>
@@ -37,8 +37,9 @@ apt-get -y install php wget unzip
 ## Installing (Kali Linux/Termux):
 
 ```
-https://github.com/ZAIDU704/Hack-For-Fun
-cd CamPhish
+git clone https://github.com/ZAIDU704/Hack-For-Fun.git
+
+cd Hack-For-Fun
 bash camphish.sh
 ```
 
@@ -92,3 +93,10 @@ Unauthorized reuploading of this project is prohibited.
 #### For More Video subcribe <a href="http://youtube.com/techchipnet">TechChip YouTube Channel</a>
 <p>CamPhish is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
 <p>CamPhish is inspired by https://github.com/thelinuxchoice/ Big thanks to @thelinuxchoice</p>
+<p> <h2>Hack-For-Fun
+
+An educational cybersecurity project for authorized security testing and learning.
+
+Original project: "CamPhish by TechChip" (https://github.com/techchipnet/CamPhish)
+
+Maintained by: "ZAIDU704" (https://github.com/ZAIDU704)</h2>
