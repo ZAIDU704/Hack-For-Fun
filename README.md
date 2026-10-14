@@ -1,102 +1,37 @@
-# CamPhish
-Grab cam shots from target's phone front camera or PC webcam just sending a link.
-![CamPhish](https://techchip.net/wp-content/uploads/2020/04/camphish.jpg)
+# HACK FOR FUN
 
-# What is CamPhish?
-<p>CamPhish is techniques to take cam shots of target's phone front camera or PC webcam. CamPhish Hosts a fake website on in built PHP server and uses ngrok & CloudFlare Tunnel to generate a link which we will forward to the target, which can be used on over internet. website asks for camera permission and if the target allows it, this tool grab camshots of target's device
+A terminal-based public greeting-link generator for Termux and Linux.
 
-A GPS location capture feature has been added.</p>
+Instagram: cybergenius.io
 
 ## Features
-<p>In this tool I added two automatic webpage templates for engaged target on webpage to get more picture of cam</p>
-<ul>
-  <li>Wishing anything</li>
-  <li>Live YouTube TV</li>
-  <li>Online Meeting [Beta]</li>
-  <li>GPS Location Tracking</li>
-</ul>
-<p>A cleanup script has been added to remove all unnecessary files and logs.</p>
+- Birthday greetings
+- YouTube video pages
+- Social-themed pages
+- Festival greetings
+- Public HTTPS links through ngrok
+- Optional, clearly disclosed device check-in
 
-## This Tool Tested On :
-<ul>
-  <li>Kali Linux</li>
-  <li>Termux</li>
-  <li>MacOS</li>
-  <li>Ubuntu</li>
-  <li>Parrot Sec OS</li>
-  <li>Windows (WSL)</li>
-</ul>
+## Install on Termux
+    pkg update
+    pkg install python git -y
+    git clone https://github.com/ZAIDU704/Hack-For-Fun.git
+    cd Hack-For-Fun
+    bash install.sh
 
-# Installing and requirements
-<p>This tool require PHP for webserver, and wget for downloading dependencies. First run following command on your terminal</p>
+## Run
+    python main.py
 
-```
-apt-get -y install php wget unzip
-```
+## Hosting
+Choose ngrok from the menu for a temporary public HTTPS link. Keep the
+tool running while the link is in use. For permanent hosting, deploy the
+Flask app to a Python-capable cloud service.
 
-## Installing (Kali Linux/Termux):
+## Privacy
+The check-in page explains what is collected. The visitor must check the
+consent box and press Start Check before the camera and location are
+requested. Nothing is captured automatically on page load.
 
-```
-git clone https://github.com/ZAIDU704/Hack-For-Fun.git
-
-cd Hack-For-Fun
-bash camphish.sh
-```
-
-## Clean logs & unnecessary files :
-
-```
-bash cleanup.sh
-```
-<p>The cam files and saved location will also be removed.</p>
-
-## Change Log:
-
-<p><b>Version: 2.0:</b> Added GPS Location Tracking</p>
-<ul>
-  <li>Added: GPS location capturing functionality</li>
-  <li>Added: Google Maps integration for captured locations</li>
-  <li>Added: Location accuracy reporting</li>
-  <li>Added: Improved loading screen with location request</li>
-</ul>
-
-<p><b>Version: 1.9:</b> Enhanced architecture detection</p>
-<ul>
-  <li>Added: Improved architecture detection for all CPU types</li>
-  <li>Added: Better support for Apple Silicon (M1/M2/M3) Macs</li>
-  <li>Added: Automatic detection of ARM, ARM64, x86, and x86_64 architectures</li>
-  <li>Fixed: Windows compatibility improvements</li>
-  <li>Fixed: CloudFlare Tunnel download issues</li>
-</ul>
-
-<p><b>Version: 1.8:</b> Added CloudFlare Tunnel and removed Serveo</p>
-<ul>
-  <li>Added: CloudFlare Tunnel support for more reliable connections</li>
-  <li>Removed: Serveo tunnel (deprecated)</li>
-  <li>Fixed: Various code improvements and bug fixes</li>
-</ul>
-
-<p><b>Version: 1.7:</b> Fix and add support</p>
-<ul>
-  <li>fixed: termux failed to get home directory</li>
-  <li>Add support for Apple sillicon (M1/M2/M3 ARM64)</li>
-  <li>Add support for arm64 like Raspberry Pi</li>
-</ul>
-<p><b>Version: 1.6:</b> Fix ngrok direct link generate</p>
-<p><b>Version: 1.5:</b> Add new online meeting template</p>
-<p><b>Version: 1.4:</b> Ngrok authtoken update</p>
-<p><b>Version: 1.3:</b> Fix ngrok direct link</p>
-
-### Important Notice
-Unauthorized reuploading of this project is prohibited.
-
-#### For More Video subcribe <a href="http://youtube.com/techchipnet">TechChip YouTube Channel</a>
-<p>CamPhish is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
-<p>CamPhish is inspired by https://github.com/thelinuxchoice/ Big thanks to @thelinuxchoice</p>
-<p> <h2>Hack-For-Fun
-
-An educational cybersecurity project for authorized security testing and learning.
-
-Original project: "CamPhish by TechChip" (https://github.com/techchipnet/CamPhish)
-
-Maintained by: "ZAIDU704" (https://github.com/ZAIDU704)</h2>
+Camera and location require browser permission and HTTPS for public use.
+Collected check-in photos and coordinates are sensitive: secure the server
+and delete submissions when no longer needed.
